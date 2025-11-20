@@ -75,14 +75,14 @@
 
 
 #wap to print the last value of a list only if it is palindrome string starting with vowel
-a=eval(input("enter the list"))
-if(type(a[-1])==str):
-    if(a[-1]==a[-1][::-1]):
-        if(a[-1][0] in "AEIOUaeiou"):
-            print(a[-1])
-        else:
-            print("not a vowel")
-    else:
-        print("not a palinndrome")
-else:
-    print("not a string")
+# a=eval(input("enter the list"))
+# if(type(a[-1])==str):
+#     if(a[-1]==a[-1][::-1]):
+#         if(a[-1][0] in "AEIOUaeiou"):
+#             print(a[-1])
+#         else:
+#             print("not a vowel")
+#     else:
+#         print("not a palinndrome")
+# else:
+#     print("not a string")
