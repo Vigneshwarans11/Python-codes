@@ -12,23 +12,23 @@
 # print(B.c,B.d,B.a,B.b)
 
 #using init function
-# class A:
-#     a=20
-#     b=30
-#     def __init__(self,c,d):
-#         self.c=c
-#         self.d=d
-# obj1=A(40,50)
-# print(obj1.c,obj1.d)
-# class B(A):
-#     e=40
-#     f=20
-#     def __init__(self,g,h,i):
-#         self.g=g
-#         self.h=h
-#         self.i=i
-# obj2=B(100,200,300)
-# print(obj2.a,obj2.g,obj2.h,obj2.i)
+class A:
+    a=20
+    b=30
+    def __init__(self,c,d):
+        self.c=c
+        self.d=d
+obj1=A(40,50)
+print(obj1.c,obj1.d)
+class B(A):
+    e=40
+    f=20
+    def __init__(self,g,h,i):
+        self.g=g
+        self.h=h
+        self.i=i
+obj2=B(100,200,300)
+print(obj2.a,obj2.g,obj2.h,obj2.i)
 
 
 #method changing
@@ -250,7 +250,22 @@
 # obj.acc_info()
 
 
-
+class one:
+    def __init__ (self,A,B):
+        self.A=A
+        self.B=B
+    def display(self):
+        print(self.A,self.B)
+class two(one):
+    def __init__ (self,A,B,C,D):
+        super().__init__(A,B)
+        self.C=C
+        self.D=D
+    def show(self):
+        super().display()
+        print(self.C,self.D)
+obj1=two(10,20,30,40)
+obj1.show()
 
 
 
