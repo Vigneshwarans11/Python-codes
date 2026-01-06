@@ -30,15 +30,65 @@
 # print(second)
 
 #Check if a number is a palindrome
-# num=121
+# num=123456
 # temp=num
 # rev=0
 
 # while temp>0:
 #     rev=rev*10+temp%10
 #     temp=temp//10
+####### print(rev)(we use only for rev of num not for palindrome)
 # if num==rev:
 #     print("palindrom")
 # else:
 #     print("not a palindrom")
 
+#Check if a str is a palindrome(loop)
+# s="madam"
+# rev=""
+# for i in s:
+#     rev=i+rev
+# if s==rev:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+#Check if a str is a palindrome(slice)
+# s="madam"
+# if s==s[::-1]:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+#4. Check if two strings are anagrams
+# s1="listen"
+# s2="silent"
+# if sorted(s1)==sorted(s2):
+#     print("anagram")
+# else:
+#     print("not anangram")
+
+#5. First non-repeating character in a string
+# s="swiss"
+# for ch in s:
+#     if s.count(ch)==1:
+#         print(ch)
+#         break
+
+#Remove duplicate characters (preserve order)
+# s="programming"
+# uni=""
+# for ch in s:
+#     if ch not in uni:
+#         uni=uni+ch
+# print(uni)
+
+#Sum of digits until single digit
+# num=9875
+# while num>10:
+#     s=0
+#     while num>0:
+#         s=s+num%10
+#         num=num//10
+#     num=s
+# print(s)
