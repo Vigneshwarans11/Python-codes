@@ -73,8 +73,6 @@
 # n=int(input("enter the value:"))
 # print(factorial(n))
 
-
-
 # sum of 2 numbers
 # def add(a,b):
 #     return a+b
@@ -86,8 +84,6 @@
 
 # add=lambda x,y:x+y
 # print(add(10,20))
-
-
 
 # Create one list with duplicates and asked how can u remove the duplicates from list?
 # list1=[1,2,2,4,5,6,7,4]
@@ -119,5 +115,3 @@ temp=a
 a=b
 b=temp
 print("After Swapping a=",a,"b=", b)
-
-
