@@ -1,0 +1,66 @@
+# Reverse a String Without Using Built-in Functions
+
+# s="hello"
+# rev=""
+
+# for i in range(len(s)-1,-1,-1):
+#     rev=rev+s[i]
+# print(rev)
+
+# for i in s:
+#     rev=i+rev
+# print(rev)
+
+#Two pointers
+# S=list("hello")
+# left = 0
+# right=len(S)-1
+
+# while left<right:
+#     S[left],S[right]=S[right],S[left]
+#     left=left+1
+#     right=right-1
+#     result="".join(S)
+# print(result)
+
+
+#Reverse Each Word in a Sentence
+# s=("hello world")
+# word=s.split()
+# result=""
+
+# for i in word:
+#     rev=""
+#     for ch in i:
+#         rev=ch+rev
+#     result=result+rev+" "
+# print(result.strip())
+
+#Check Palindrome Using Reverse
+# S="MADAM"
+# rev=""
+# for ch in S:
+#     rev=ch+rev
+# if S==rev:
+#     print("palindrome")
+# else:
+#     print("not a palindrome")
+
+
+
+#  Find the Second Largest Element in an Array 
+# arr=  [12, 35, 1, 10, 34, 1] 
+# largest=arr[0]
+# second=-1
+
+# for num in arr:
+#     if num>largest:
+#         second=largest
+#         largest=num
+#     elif num >second and num!=largest:
+#         second=num
+# print(second)
+
+
+
+
