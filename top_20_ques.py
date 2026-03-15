@@ -61,6 +61,34 @@
 #         second=num
 # print(second)
 
+#min max in a given digit
 
+# n=int(input("Enter the value:"))
+# max_value=0
+# min_value=978753
+# while n>0:
+#     digit=n%10
+#     max_value=max(max_value,digit)
+#     min_value=min(min_value,digit)
+#     n=n//10
+# print(max_value,min_value)
+
+
+#Chat Moderation System
+# s="hellllo"
+# count=1
+# for i in range(1,len(s)):
+#     if s[i]==s[i-1]:
+#         count=count+1
+#         if count==3:
+#             print("spam")
+#             break
+#     else:
+#         count=1
+# else:
+#     print("safe")
+
+
+#cho
 
 
