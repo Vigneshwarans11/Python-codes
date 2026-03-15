@@ -89,6 +89,15 @@
 #     print("safe")
 
 
-#cho
+#chocolate distribution
+n=7
+arr=list(map(int,input().split()))
+m=3
+arr.sort()
+min_diff=float("inf")
+for i in range(n-m+1):
+    diff=arr[i+m-1]-arr[i]
+    min_diff=min(min_diff,diff)
+print(min_diff)
 
 
