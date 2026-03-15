@@ -90,14 +90,37 @@
 
 
 #chocolate distribution
-n=7
-arr=list(map(int,input().split()))
-m=3
-arr.sort()
-min_diff=float("inf")
-for i in range(n-m+1):
-    diff=arr[i+m-1]-arr[i]
-    min_diff=min(min_diff,diff)
-print(min_diff)
+# n=7
+# arr=list(map(int,input().split()))
+# m=3
+# arr.sort()
+# min_diff=float("inf")
+# for i in range(n-m+1):
+#     diff=arr[i+m-1]-arr[i]
+#     min_diff=min(min_diff,diff)
+# print(min_diff)
+
+# library fine Calculation
+
+# n=5
+# arr=list(map(int,input().split()))
+# k=5
+# fine=0 
+# for days in arr:
+#     if days>k:
+#         fine=fine+days-k
+# print(fine)
+
+#bus passanger tracking
+n=int(input())
+current=0
+max_pass=0
+
+for i in  range(n):
+    off,on=map(int,input().split())
+    current=current-off
+    current=current+on
+    max_pass=max(max_pass,current)
+print(max_pass)
 
 
