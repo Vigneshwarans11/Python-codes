@@ -112,15 +112,73 @@
 # print(fine)
 
 #bus passanger tracking
-n=int(input())
-current=0
-max_pass=0
+# n=int(input())
+# current=0
+# max_pass=0
 
-for i in  range(n):
-    off,on=map(int,input().split())
-    current=current-off
-    current=current+on
-    max_pass=max(max_pass,current)
-print(max_pass)
+# for i in  range(n):
+#     off,on=map(int,input().split())
+#     current=current-off
+#     current=current+on
+#     max_pass=max(max_pass,current)
+# print(max_pass)
+
+
+#size of array is given ,we create a list of array
+
+# n=int(input("enter the size of array:"))
+# arr=[]
+# for i in range (n):
+#     num=int(input("enter the list nums"))
+#     arr.append(num)
+# print(arr)
+
+#space seperated array is given 
+# arr=list(map(int,input().split()))
+# print("array:",arr)
+
+#comma seperated array is given 
+# arr=list(map(int,input().split(",")))
+# print("array:",arr)
+
+#space seperated value is input    #input: 2 3
+# r,s=map(int,input().split())
+# print("no of rows:",r)
+# print("no of column:",s)
+
+#comma seperated value is input     #input: 2,3
+# r,s=map(int,input().split(","))
+# print("no of rows:",r)
+# print("no of column:",s)
+
+#Replace Elements by its rank in the array
+
+# def replaceWithRank(arr):
+#     rank_map={}
+#     rank=1
+#     for num in sorted (arr):
+#         if num not in rank_map:
+#             rank_map[num]=rank
+#             rank=rank+1
+#     return [rank_map[num] for num in arr]
+# n=int(input().strip())
+# arr=list(map(int,input().split()))
+# result=replaceWithRank(arr)
+# print(*result)  
+
+
+#Remove character from first string present in second string
+# def removeChars(str1,str2):
+#     Remove_sets=set(str2)
+#     result=[]
+#     for ch in str1:
+#         if ch not in Remove_sets:
+#             result.append(ch)
+#     return "".join(result)
+# str1=input("str1:")
+# str2=input("str2:")
+# print(removeChars(str1, str2))
+
+
 
 
