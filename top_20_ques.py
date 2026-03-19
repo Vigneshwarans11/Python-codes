@@ -180,5 +180,44 @@
 # print(removeChars(str1, str2))
 
 
+#leader in array
+# def findleaders(arr):
+#     n=len(arr)
+#     leaders=[]
+#     max_from_right=arr[-1]
+#     leaders.append(max_from_right)
+#     for i in range(n-2,-1,-1):
+#         if arr[i]>= max_from_right:
+#             max_from_right=arr[i]
+#             leaders.append(arr[i])
+#     return leaders[::-1]
+# n=int(input().strip())
+# arr=list(map(int,input().split()))
+# result=findleaders(arr)
+# print(*result)
 
 
+#LONGEST SUBSTRING WITHOUT REPEATING CHAR
+# def lengthOfString(s):
+#     left=0
+#     max_len=0
+#     ch_set=set()
+#     for right in range(len(s)):
+#         while s[right] in ch_set:
+#             ch_set.remove(s[left])
+#             left=left+1
+#         ch_set.add(s[right])
+#         max_len=max(max_len,right-left+1)
+#     return max_len
+# s=input().strip()
+# print(lengthOfString(s))
+
+#Missing num in array
+# n=int(input().strip())
+# arr=list(map(int,input().split()))
+
+# expected_sum=n*(n+1)//2
+# actual_sum=sum(arr)
+
+# print(expected_sum-actual_sum)
+        
