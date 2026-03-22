@@ -283,3 +283,56 @@
 
 # word=input("enter the word:")
 # print(lettercheck(word))
+
+
+
+# Given a binary string s, return the number of substrings with all characters 1's
+
+# Example 1:
+
+# Input: s = "0110111"
+# Output:9
+# Explanation: There are 9 substring in total with only 1's characters.
+# "1" -> 5 times.
+# "11" ->3 times.
+# "111" -> 1 time.
+
+# def countnumbers(s):
+#     count=0
+#     current=0
+#     for ch in s:
+#         if ch =="1":
+#             current=current+1
+#             count=current+count
+#         else:
+#             current=0
+#     return count
+
+# s=input("numbers:")
+# print(countnumbers(s))
+
+# There are n bulbs that are initially off. You first turn on all the bulbs, then you turn off every second bulb.
+
+# On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb.
+
+# Return the number of bulbs that are on after n rounds.
+
+# Input: n = 3
+# Output: 1
+
+# def bulbswitch(n):
+#     bulb=[False] * n
+
+#     for i in range(1,n+1):
+#         for j in range(i-1,n,i):
+#             bulb[j]=not bulb[j]
+
+#     count=0
+#     for b in bulb:
+#         if b:
+#             count=count+1
+#     return count
+
+# n=int(input("enter the num:"))
+# print(bulbswitch(n))
+
