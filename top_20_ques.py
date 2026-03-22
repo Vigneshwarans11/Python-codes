@@ -220,4 +220,66 @@
 # actual_sum=sum(arr)
 
 # print(expected_sum-actual_sum)
-        
+
+
+
+#Valid Capital Usage Conditions:
+# def checkCapitalletters(word):
+#     if word.isupper():
+#         return True
+#     elif word.islower():
+#         return True
+#     elif word[0].isupper() and word[1:].islower():
+#         return True
+#     else:
+#         return False
+# word=input("enter the word:")
+# result=checkCapitalletters(word)
+# print(result)     
+
+
+# all are upper or lower case or 1st letter is upper and nxt or lower or if change one letter is upper pr lower its true eg(Flag-flag  or leetcOde - leetcode)  
+# def letterchange(word):
+#     upper=0
+#     lower=0
+
+#     for ch in word:
+#         if ch.isupper():
+#             upper=upper+1
+#         else:
+#             lower=lower+1
+
+#     if upper==len(word) or lower==len(word):
+#         return True
+#     elif ch[0].isupper() and ch[1:].islower():
+#         return False
+#     elif upper==1 or lower==1:
+#         return True
+#     return False
+
+# word=input("enter the word:")
+# print(letterchange(word))
+
+# all are upper or lower case or 1st letter is upper and nxt or lower or and also (FlaG - Flag 1st letter is upper nxt we can change in one letter is ok )
+# def lettercheck(word):
+#     def iscorrect(w):
+#         return(
+#             w.isupper() or
+#             w.islower() or
+#             (w[0].isupper() and w[1:].islower())
+#             )
+#     if iscorrect(word):
+#         return True
+    
+#     for i in range(len(word)):
+#         if word[i].isupper():
+#             new_word=word[:i] + word[i].lower() + word[i+1:]
+#         else:
+#             new_word=word[:i] + word[i].upper() + word[i+1:]
+
+#         if iscorrect(new_word):
+#             return True
+#     return  False
+
+# word=input("enter the word:")
+# print(lettercheck(word))
