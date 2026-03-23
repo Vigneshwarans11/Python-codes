@@ -336,3 +336,95 @@
 # n=int(input("enter the num:"))
 # print(bulbswitch(n))
 
+# Question 1: Multi-Tier Discount Logic Problem: Calculate the final price based on the total bill amount.
+# 0 - 1000: 5% discount
+# 1001 - 5000: 10% discount
+# | 5000: 15% discount
+# Logic:
+#  we need to return
+# "Error" when money is negative.
+
+# def finalprice(amount):
+#     if amount<0:
+#         return "error"
+#     elif amount<1000:
+#         discount=0.05
+#     elif amount<5000:
+#         discount=0.10
+#     else:
+#         discount=0.15
+#     final = amount-(amount*discount)
+#     return final
+
+# amount=float(input("enter the amount:"))
+# print(finalprice(amount))
+
+
+
+# def gymprice(month):
+#     if month<=0:
+#         return "invalid input"
+#     elif month == 1:
+#         return 2000
+#     elif month>=2 and month<=3:
+#         return 5000
+#     elif month>=4 and month <=6:
+#         return 9000
+#     elif month>6:
+#         return 15000
+# month=int(input("enter the month:"))
+# print(gymprice(month))
+
+
+#parking fine
+# def parkingcharges(hours):
+#     if hours<=0 or 1<=hours>=24:
+#         return "error"
+#     elif hours<=2:
+#         return hours*100
+#     elif hours>=3 and hours<=5:
+#         return 200+(hours-2)*50
+#     elif hours>5:
+#         return 200+150+(hours-5)*20
+#     return "error"
+
+# hours=int(input("enter the hours:"))
+# print(parkingcharges(hours))
+
+#              or 
+# def parkingcharge(s):
+#     if s<1 or s>24:
+#         return "error"
+    
+#     total=0
+    
+#     for i in range(1,s+1):
+#         if i<=2:
+#             total=total+100
+#         elif i>=3 or i<=5:
+#             total=total+50
+#         else:
+#             total=total+20
+#     return total
+
+# s=int(input("hours:"))
+# print(parkingcharge(s))
+
+# def electricbill(unit):
+#     if unit<0:
+#         return "error"
+#     total=0
+        
+#     for i in range(1,unit+1):
+#         if i>=0 and i<=100:
+#             total=total+5
+#         elif i>=101 and i<=200:
+#             total =total+7
+#         else:
+#             total=total+10
+#     return total
+    
+# unit=int(input("entert the units:"))
+# print(electricbill(unit))
+
+
