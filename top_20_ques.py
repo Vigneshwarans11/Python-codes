@@ -435,3 +435,31 @@
 #         if total<m:
 #             count=count+1
 # print(count)
+
+# n=5
+# arr=[45,65,50,55,75]
+# m=200
+# count=0
+# total=0
+# for num in arr:
+#     if total+num<=m:
+#         total=total+num
+#         count=count+1
+#     else:
+#         break
+# print(count)
+
+# def passanger_ballon(n,arr,m):
+#     count=0
+#     total=0
+#     arr.sort()
+    
+#     for num in arr:
+#         if total+num<=m:
+#             total=total+num
+#             count=count+1
+#     return count
+# n=int(input("enter the no of passanger:"))
+# arr=list(map(int,input("enter the weight").split()))
+# m=int(input("max weight:"))
+# print(passanger_ballon(n,arr,m)) 
