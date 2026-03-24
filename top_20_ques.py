@@ -1,17 +1,15 @@
 # Reverse a String Without Using Built-in Functions
-
 # s="hello"
 # rev=""
-
 # for i in range(len(s)-1,-1,-1):
 #     rev=rev+s[i]
 # print(rev)
-
 # for i in s:
 #     rev=i+rev
 # print(rev)
 
-#Two pointers
+
+# Two pointers:
 # S=list("hello")
 # left = 0
 # right=len(S)-1
@@ -24,7 +22,7 @@
 # print(result)
 
 
-#Reverse Each Word in a Sentence
+# Reverse Each Word in a Sentence
 # s=("hello world")
 # word=s.split()
 # result=""
@@ -36,7 +34,7 @@
 #     result=result+rev+" "
 # print(result.strip())
 
-#Check Palindrome Using Reverse
+# Check Palindrome Using Reverse
 # S="MADAM"
 # rev=""
 # for ch in S:
@@ -45,8 +43,6 @@
 #     print("palindrome")
 # else:
 #     print("not a palindrome")
-
-
 
 #  Find the Second Largest Element in an Array 
 # arr=  [12, 35, 1, 10, 34, 1] 
@@ -61,7 +57,7 @@
 #         second=num
 # print(second)
 
-#min max in a given digit
+# min max in a given digit
 
 # n=int(input("Enter the value:"))
 # max_value=0
@@ -74,7 +70,7 @@
 # print(max_value,min_value)
 
 
-#Chat Moderation System
+# Chat Moderation System
 # s="hellllo"
 # count=1
 # for i in range(1,len(s)):
@@ -89,7 +85,7 @@
 #     print("safe")
 
 
-#chocolate distribution
+# chocolate distribution
 # n=7
 # arr=list(map(int,input().split()))
 # m=3
@@ -111,7 +107,7 @@
 #         fine=fine+days-k
 # print(fine)
 
-#bus passanger tracking
+# bus passanger tracking
 # n=int(input())
 # current=0
 # max_pass=0
@@ -124,7 +120,7 @@
 # print(max_pass)
 
 
-#size of array is given ,we create a list of array
+# size of array is given ,we create a list of array
 
 # n=int(input("enter the size of array:"))
 # arr=[]
@@ -133,25 +129,25 @@
 #     arr.append(num)
 # print(arr)
 
-#space seperated array is given 
+# space seperated array is given 
 # arr=list(map(int,input().split()))
 # print("array:",arr)
 
-#comma seperated array is given 
+# comma seperated array is given 
 # arr=list(map(int,input().split(",")))
 # print("array:",arr)
 
-#space seperated value is input    #input: 2 3
+# space seperated value is input    #input: 2 3
 # r,s=map(int,input().split())
 # print("no of rows:",r)
 # print("no of column:",s)
 
-#comma seperated value is input     #input: 2,3
+# comma seperated value is input     #input: 2,3
 # r,s=map(int,input().split(","))
 # print("no of rows:",r)
 # print("no of column:",s)
 
-#Replace Elements by its rank in the array
+# Replace Elements by its rank in the array
 
 # def replaceWithRank(arr):
 #     rank_map={}
@@ -167,7 +163,7 @@
 # print(*result)  
 
 
-#Remove character from first string present in second string
+# Remove character from first string present in second string
 # def removeChars(str1,str2):
 #     Remove_sets=set(str2)
 #     result=[]
@@ -180,7 +176,7 @@
 # print(removeChars(str1, str2))
 
 
-#leader in array
+# leader in array
 # def findleaders(arr):
 #     n=len(arr)
 #     leaders=[]
@@ -197,7 +193,7 @@
 # print(*result)
 
 
-#LONGEST SUBSTRING WITHOUT REPEATING CHAR
+# LONGEST SUBSTRING WITHOUT REPEATING CHAR
 # def lengthOfString(s):
 #     left=0
 #     max_len=0
@@ -212,7 +208,7 @@
 # s=input().strip()
 # print(lengthOfString(s))
 
-#Missing num in array
+# Missing num in array
 # n=int(input().strip())
 # arr=list(map(int,input().split()))
 
@@ -223,7 +219,7 @@
 
 
 
-#Valid Capital Usage Conditions:
+# Valid Capital Usage Conditions:
 # def checkCapitalletters(word):
 #     if word.isupper():
 #         return True
@@ -376,7 +372,7 @@
 # print(gymprice(month))
 
 
-#parking fine
+# parking fine
 # def parkingcharges(hours):
 #     if hours<=0 or 1<=hours>=24:
 #         return "error"
@@ -427,4 +423,15 @@
 # unit=int(input("entert the units:"))
 # print(electricbill(unit))
 
-
+# # max pasanger in ballon with a weight
+# n=5
+# arr=[45,65,50,55,75]
+# m=200
+# count=0
+# total=0
+# for num in arr:
+#     if num<m:
+#         total=total+num
+#         if total<m:
+#             count=count+1
+# print(count)
