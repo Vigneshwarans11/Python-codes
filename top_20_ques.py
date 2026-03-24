@@ -463,3 +463,31 @@
 # arr=list(map(int,input("enter the weight").split()))
 # m=int(input("max weight:"))
 # print(passanger_ballon(n,arr,m)) 
+
+# def checktransaction(transactions):
+#     seen=[]
+
+#     for i in range(len(transactions)):
+#         sender=transactions[i][0]
+#         reciver=transactions[i][1]
+#         time=transactions[i][0]
+        
+#         if (sender,reciver) in seen:
+#             return "transaction failed"
+#         seen.append(sender,reciver)
+
+#         if i>0:
+#             prev_time=transactions[i-1][2]
+#             if time-prev_time>60:
+#                 return "fraud detection"
+#         return "all transaction true"
+
+# n=int(input("enter the num of transaction:"))
+# transactions=[]
+# for _ in range(n):
+#     sender,reciver,time=input().split()
+#     transactions.append(sender,reciver,time)
+# print(transactions)
+
+        
+            
