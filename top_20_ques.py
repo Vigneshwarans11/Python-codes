@@ -506,48 +506,48 @@
 # month=int(input("enter the month:"))
 # print(gym(month))
 
-def selection_sort(arr):
-    n=len(arr)
-    for i in range (n):
-         min_indx=i
-         for j in range(i+1,n):
-              if (arr[j][0]<arr[min_indx][0] or 
-                  (arr[j][0]==arr[min_indx][0] and arr[j][1]<arr[min_indx][1])):
-                   min_indx=j
-         arr[i],arr[min_indx]=arr[min_indx],arr[i]
-    return arr
+# def selection_sort(arr):
+#     n=len(arr)
+#     for i in range (n):
+#          min_indx=i
+#          for j in range(i+1,n):
+#               if (arr[j][0]<arr[min_indx][0] or 
+#                   (arr[j][0]==arr[min_indx][0] and arr[j][1]<arr[min_indx][1])):
+#                    min_indx=j
+#          arr[i],arr[min_indx]=arr[min_indx],arr[i]
+#     return arr
 
-n=int(input("enter the arr:"))
-arr=[]
-for i in range (n):
-     a,b=map(int,input().split())
-     arr.append((a,b))
-print(selection_sort(arr))
+# n=int(input("enter the arr:"))
+# arr=[]
+# for i in range (n):
+#      a,b=map(int,input().split())
+#      arr.append((a,b))
+# print(selection_sort(arr))
 
 
-#Login Monitoring System
-def checklogin(record):
-    seen = []
+# #Login Monitoring System
+# def checklogin(record):
+#     seen = []
 
-    for i in range(len(record)):
-        user = record[i][0]
-        time = record[i][1]
-        # Duplicate login
-        if user in seen:
-            return "Duplicate Login"
-        seen.append(user
-        # Suspicious login (within 30 sec)
-        if i > 0:
-            prev_time = record[i-1][1]
-            if time - prev_time < 30:
-                return "Suspicious Login"
-    return "All Logins Valid"
-n = int(input("Enter number of records: "))
-record = []
-for i in range(n):
-    user, time = map(int, input().split())
-    record.append((user, time))
-print(checklogin(record))
+#     for i in range(len(record)):
+#         user = record[i][0]
+#         time = record[i][1]
+#         # Duplicate login
+#         if user in seen:
+#             return "Duplicate Login"
+#         seen.append(user
+#         # Suspicious login (within 30 sec)
+#         if i > 0:
+#             prev_time = record[i-1][1]
+#             if time - prev_time < 30:
+#                 return "Suspicious Login"
+#     return "All Logins Valid"
+# n = int(input("Enter number of records: "))
+# record = []
+# for i in range(n):
+#     user, time = map(int, input().split())
+#     record.append((user, time))
+# print(checklogin(record))
 
     
         
