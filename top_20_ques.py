@@ -576,6 +576,19 @@
 # for m, a in arr:
 #     print(m, a)
 
+# Given N=4 Arr[20,25,30,35] These are prices of ticket in movie theatre We have to find all odd prices And then output Sum of odd prices, count of odd prices and average of odd prices Example output 60 2 30.00
+# n=4
+# arr=[20,25,30,35]
+# count=0
+# sum_num=0
+# avg=0
+# for num in arr:
+#     if num%2!=0:
+#         count=count+1
+#         sum_num=sum_num+num
+#         avg=sum_num//count
+# print(sum_num,count,format(avg,".2f"))
+
     
         
             
