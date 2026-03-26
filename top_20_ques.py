@@ -488,6 +488,8 @@
 #     sender,reciver,time=input().split()
 #     transactions.append(sender,reciver,time)
 # print(transactions)
+# for s,r,t in transactions:
+#     print(s,r,t)
 
 #gym membership
 
@@ -523,6 +525,8 @@
 #      a,b=map(int,input().split())
 #      arr.append((a,b))
 # print(selection_sort(arr))
+# for a,b in arr:
+#     print(a,b)
 
 
 # #Login Monitoring System
@@ -535,7 +539,7 @@
 #         # Duplicate login
 #         if user in seen:
 #             return "Duplicate Login"
-#         seen.append(user
+#         seen.append(user)
 #         # Suspicious login (within 30 sec)
 #         if i > 0:
 #             prev_time = record[i-1][1]
@@ -548,6 +552,29 @@
 #     user, time = map(int, input().split())
 #     record.append((user, time))
 # print(checklogin(record))
+# for u,i in record:
+#     print(u,i)
+
+
+#Student_mark analysis
+# def students_marks(arr):
+#     n=len(arr)
+#     for i in range(n):
+#         min_index=i        
+#         for j in range(i+1,n):
+#             if (arr[j][0] < arr[min_index][0] or (arr[j][0]==arr[min_index][0] and arr[j][1]<arr[min_index][1])):
+#                 min_index=j
+#         arr[i],arr[min_index]=arr[min_index],arr[i]
+#     return arr
+    
+# n=int(input("enter the value:"))
+# arr=[]
+# for i in range(n):
+#     mark,age=map(int,input("Enter marks and age:").split())
+#     arr.append((mark,age))
+# print(students_marks(arr))
+# for m, a in arr:
+#     print(m, a)
 
     
         
