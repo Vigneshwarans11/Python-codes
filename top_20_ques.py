@@ -7,8 +7,7 @@
 # for i in s:
 #     rev=i+rev
 # print(rev)
-
-
+ 
 # Two pointers:
 # S=list("hello")
 # left = 0
@@ -491,7 +490,7 @@
 # for s,r,t in transactions:
 #     print(s,r,t)
 
-#gym membership
+# gym membership
 
 # def gym(month):
 #     if month<=0:
@@ -556,7 +555,7 @@
 #     print(u,i)
 
 
-#Student_mark analysis
+# Student_mark analysis
 # def students_marks(arr):
 #     n=len(arr)
 #     for i in range(n):
@@ -589,6 +588,69 @@
 #         avg=sum_num//count
 # print(sum_num,count,format(avg,".2f"))
 
-    
+
+# def find_pair(arr,target):
+#     left=0
+#     right=len(arr)-1
+
+#     while left<right:
+#         current_num=arr[left]+arr[right]
+#         if current_num==target:
+#             return (arr[left],arr[right])
+#         elif current_num < target:
+#             left =left +1
+#         else:
+#             right=right-1
+#     return False
+
+# arr=list(map(int,input().split()))
+# target=int(input("enter the target:"))
+# result=find_pair(arr,target)
+# if result:
+#     print("pair exist",result)    
+# else:
+#     print("not exist")
         
-            
+# def find_count(arr,target):
+#     left=0
+#     right=len(arr)-1
+#     count=0
+
+#     while left<right:
+#        current_num=arr[left]+arr[right]
+#        if current_num == target:
+#            count=count+1
+#            right=right-1
+#            left=left+1
+#         elif current_num<target:
+#             left=left+1
+#         else:
+#             right=right-1
+#     return count
+
+# arr=list(map(int,input().split()))
+# target=int(input("enter the target:"))
+# print(find_count(arr,target))
+
+# def find_pair(arr, target):
+#     left = 0
+#     right = len(arr) - 1
+#     count = 0
+#     arr1 = []
+#     while left < right:
+#         current_num = arr[left] + arr[right]
+#         if current_num == target:
+#             arr1.append((arr[left], arr[right]))  # ✅ store first
+#             count += 1
+#             left += 1
+#             right -= 1
+#         elif current_num < target:
+#             left += 1
+#         else:
+#             right -= 1
+#     return count, arr1
+# arr = list(map(int, input().split()))
+# target = int(input("enter the target: "))
+
+# result = find_pair(arr, target)
+# print("Result:", result)
