@@ -654,3 +654,51 @@
 
 # result = find_pair(arr, target)
 # print("Result:", result)
+
+
+
+# def internet_plan(n):
+#     price=0
+
+#     if n==0:
+#         return "no usage"
+#     elif n<0:
+#         return "negative"
+#     if n<=10:
+#         price=price+n*20
+#     elif n<=50:
+#         price=(price+10*20)+(n-10)*15
+#     elif n<=100:
+#         price =(price+10*20)+(price+40*15)+(n-50)*10
+#     else:
+#         price=(price+10*20)+(price+40*15)+(price+50*10)+(n-100)*5
+
+#     final= price+price*18/100
+#     return f"{final:.2f}"
+# n=60
+# print(internet_plan(n))
+
+# def hospital_bill(days):
+#     bill=0
+#     for d in range(1,days+1):
+#         if days<0:
+#             return "invalid days"
+#         if days==1:
+#             bill = 1500+500
+#         elif days<=5:
+#             bill = days*(1200+400)
+#         elif days<=10:
+#             bill = days*(100+300)
+#         else:
+#             bill=days*(800+200)
+#     with_insurance=bill*0.7
+#     return bill,with_insurance
+
+# days=3
+# print(hospital_bill(days))
+    
+
+    
+
+
+    
