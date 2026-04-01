@@ -57,10 +57,9 @@
 # print(second)
 
 # min max in a given digit
-
 # n=int(input("Enter the value:"))
 # max_value=0
-# min_value=978753
+# min_value=9
 # while n>0:
 #     digit=n%10
 #     max_value=max(max_value,digit)
@@ -96,7 +95,6 @@
 # print(min_diff)
 
 # library fine Calculation
-
 # n=5
 # arr=list(map(int,input().split()))
 # k=5
@@ -697,7 +695,83 @@
 # days=3
 # print(hospital_bill(days))
     
+# def scholarship_amt(n, mark, m):
+#     if m > n:
+#         return "insufficient students"
+    
+#     if any(x < 0 or x > 100 for x in mark):
+#         return "invalid marks"
+    
+#     mark.sort()
+#     min_diff = float("inf")
+#     output = ""
 
+#     for i in range(n - m + 1):
+#         total=mark[i:i+m]
+#         avg = sum(mark[i:i+m]) / m
+#         diff=mark[i+m-1]-mark[i]
+
+#         if avg >= 90:
+#             output = "50000"
+#         elif avg >= 75:
+#             output = "35000"
+#         elif avg >= 60:
+#             output = "20000"
+#         else:
+#             output = "10000"
+
+#         min_diff = min(min_diff, diff)
+#     return min_diff,output
+# n = int(input("enter the students: "))
+# mark = list(map(int, input("enter the marks: ").split()))
+# m = int(input("enter the taken students: "))
+# out1,out2=(scholarship_amt(n, mark, m))
+# print(out1)
+# print(out2)
+
+# def scholarship_amt(n,mark,m):
+#     if m>n:
+#         return "insuffecient students"
+#     if mark<0 or mark>100:
+#         return "invalid marks"
+    
+#     mark.sort()
+#     min_diff = float("inf")
+#     for num in range(n-m+1):
+#         if num>0:
+#             total=mark[i]+mark[i+1]+mark[i+2]
+#             avg=total/3
+#                 if avg==sum(mark[i+m-1]-mark[i])/3:
+#                     return "equal marks group selected"
+#                 elif avg>=90:
+#                     diff=mark[i+m-1]-mark[i]
+#                     min_diff=min(min_diff,diff)
+#                     output="50000"
+#                     break
+#                  elif avg>=75:
+#                     diff=mark[i+m-1]-mark[i]
+#                     min_diff=min(min_diff,diff)
+#                     output="35000"
+#                     break
+#                  elif avg>=60:
+#                     diff=mark[i+m-1]-mark[i]
+#                     min_diff=min(min_diff,diff)
+#                     output="20000"
+#                     break
+#                  elif avg<60:
+#                     diff=mark[i+m-1]-mark[i]
+#                     min_diff=min(min_diff,diff)
+#                     output="10000"
+#     return min_diff
+#     return output
+# n=int(input("enter the students:"))
+# mark=list(map(int,input("enter the marks")))
+# m=int(input("enter the taken students"))
+            
+    
+    
+        
+        
     
 
 
