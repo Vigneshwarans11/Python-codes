@@ -785,13 +785,25 @@
 # arr=list(map(int,input().split()))
 # print(frequency_num(arr))
         
-        
+# def count_num(s):
+#     count_0=0
+#     count_1=0
+#     current_0=0
+#     current_1=0
     
+#     for ch in s:
+#         if ch == "0":
+#             current_0=current_0+1
+#             count_0=count_0+current_0
+#         else:
+#             current_0=0
             
-    
-        
-        
-    
-
-
-    
+#         if ch=="1":
+#             current_1=current_1+1
+#             count_1=count_1+current_1
+#         else:
+#             current_1=0
+#         length=count_0+count_1
+#     return length
+# s=input("enter the string:") #00111
+# print(count_num(s))      # 9  
