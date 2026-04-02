@@ -109,7 +109,7 @@
 # current=0
 # max_pass=0
 
-# for i in  range(n):
+# for i in range(n):
 #     off,on=map(int,input().split())
 #     current=current-off
 #     current=current+on
@@ -768,7 +768,26 @@
 # mark=list(map(int,input("enter the marks")))
 # m=int(input("enter the taken students"))
             
+# def frequency_num(arr):
+#     number={}
+#     arr1=sorted(arr)
     
+#     for num in arr1:
+#         if num not in number:
+#             number[num]=1
+#         elif num in number:
+#             number[num]+=1
+#     result=[]
+#     for num in arr:
+#         result.append(number[num])
+#     return result
+# n=int(input("enter the numbers:"))
+# arr=list(map(int,input().split()))
+# print(frequency_num(arr))
+        
+        
+    
+            
     
         
         
